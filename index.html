@@ -1,23 +1,145 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title>Моя первая страница</title>
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-</head>
-<body>
-    <h1>GitHub & Mozilla рулят</h1>
-    <img src="images/my_foto.jpeg" alt="Моё тестовое изображение">
-  
-    <p>Мои первые шаги в веб-разработке</p>
-    
-    <ul> 
-    <li>Выучить HTML5</li>
-    <li>Выучить CSS3</li>
-    <li>Выучить JavaScript</li>
-    </ul>
+<html lang="en">
 
-    <script src="scripts/main.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <!-- Надо для адаптации под смартфоны -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Для браузеров -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Для подключения папки CSS-->
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <!-- Шрифт от Google -->
+    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet"> 
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>Mikhail</title>
+    <!-- <style>
+        body {
+            background-image: url("images/island.jpg");
+            background-color: aqua;
+            background-repeat: repeat-y;
+        }
+        h1 {
+            font-family: 'Gamja Flower', cursive;
+            text-decoration: underline;
+            margin-bottom: 5%;
+        }
+        /* footer {
+            background-color: 
+        } */
+        .about {
+            background-color: rgb(228, 228, 228);
+            margin: 0% 20% 0% 20%;
+            padding: 8% 2% 2% 2%;
+            border-bottom: 1px solid gold;
+        }
+        .portfolio {
+            background: mediumspringgreen;
+            margin: 0% 20% 0% 20%;
+            padding: 2% 2% 2% 2%;
+        }
+        .contact {
+            background-color: rgb(228, 228, 228);
+            margin: 0% 20% 0% 20%;
+            padding: 2% 2% 2% 2%;
+        }
+    </style> -->
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-secondary">
+            <a class="navbar-brand" href="#">
+                <img src="images/brain.png" alt="My brain">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<!-- header end -->
+
+<!-- Центральная часть сайта  -->
+    <div class="">
+<!-- Section about me -->
+        <div class="about">
+            <h1 class="text-center">About <img src="images/ic_face_black.png" alt="icon face"> me</h1>
+            <div class="row">
+                <div class="col-md-8">
+                    <p>Всем привет! Я по образования
+                        <strong>Психолог</strong>, но мне очень нравится программирование, работа с созданием программ. На данном этапе я
+                        только учусь, но я привык к трудным и сложным задачам, по-этому считаю, что я смогу найти приятный и сильный
+                        коллекти, который сможет меня принять.</p>
+                    <p>_____________________________________________________</p>
+                    <p>HTML, CSS, Java, Python, Kotlin, JavaScript</p>
+                </div>
+            <div class="col-md-4">
+                <img src="images/i_student.jpg" alt="I student" class="img-circle">
+            </div>
+        </div>
+        </div>
+<!-- End section about me -->
+
+<!-- Section portfolio -->
+        <div class="portfolio">
+            <h1 class="text-center">Portfolio <img src="images/ic_build_black.png" alt="My build"></h1>
+            <div class="text-center row">
+                <div class="col-md-6">
+                    <img src="https://www.sololearn.com/Certificate/1014-8697756/jpg/?mode=download" height="200px" width="300px" alt="">
+                </div>
+                <div class="col-md-6">
+                    <img src="https://www.sololearn.com/Certificate/1073-8697756/jpg/?mode=download" height="200px" width="300px" alt="">
+                </div>
+            </div>
+        </div>
+<!-- End section portfolio -->
+
+<!-- Section contact -->
+        <div class="contact" id="#contact">
+            <h1 class="text-center">Contact <img src="images/ic_contact_mail_black.png" alt="Contact"> with me</h1>
+            <div>
+                <div>
+                    <h5>Email: slychai85@gmail.com</h5>
+                    <h5>Phone: +7(926)8-53-54-17</h5>
+                </div>
+                <div>
+                    <!-- Place this tag where you want the button to render. -->
+                    <a class="github-button" href="https://github.com/slychai85" aria-label="Follow @slychai85 on GitHub">Follow @slychai85</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- End section contact -->
+<!-- Footer start -->
+    <!-- <div class="bg-secondary">
+        <footer>
+            <p>dfsfsdfsd</p>
+        </footer>
+    </div> -->
+<!-- Footer end -->
+
+<!-- Конец центальной части -->
 </body>
+
 </html>

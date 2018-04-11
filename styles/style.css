@@ -1,33 +1,35 @@
-html {
-    background-color: #00539F;
-    font-size: 10px;
-    font-family: placeholder:
-}
-
-h1 {
-    font-size: 60px;
-    text-align: center;
-    margin: 0;
-    padding: 20px 0;
-    color: #00539F;
-    text-shadow: 3px 3px 1px black;
-}
-
-p, li {
-    font-size: 16px;
-    line-height: 2;
-    letter-spacing: 1px;
-}
-
 body {
-    width: 600px;  /*заставляет тело быть всегда 600 пикселей в ширину.*/
-    margin: 0 auto;
-    background-color: #FF9500;
-    padding: 0 20px 20 px 20px;
-    border: 5px solid black;
+    background-image: url("images/island.jpg");
+    background-color: aqua;
+    background-repeat: repeat-y;
 }
-
-img {
-    display: block;
-    margin: 0 auto;
+body {
+    background-image: url("images/island.jpg");
+    background-color: aqua;
+    background-repeat: repeat-y;
+}
+h1 {
+    font-family: 'Gamja Flower', cursive;
+    text-decoration: underline;
+    margin-bottom: 5%;
+}
+.about {
+    background-color: rgb(228, 228, 228);
+    margin: 0% 20% 0% 20%;
+    padding: 8% 2% 2% 2%;
+    border-bottom: 1px solid gold;
+}
+.portfolio {
+    background: mediumspringgreen;
+    margin: 0% 20% 0% 20%;
+    padding: 2% 2% 2% 2%;
+}
+.contact {
+    background-color: rgb(228, 228, 228);
+    margin: 0% 20% 0% 20%;
+    padding: 2% 2% 2% 2%;
+}
+.img-circle {
+    border: 3px solid gold;
+    border-radius: 50%;
 }
